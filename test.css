@@ -1,0 +1,311 @@
+html, body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	box-sizing: border-box;
+	overflow-x: hidden; /* Ez megakadályozza a vízszintes görgetést */
+}
+
+.header {
+	position: absolute;
+    top: -200px;
+    left: 0px;
+	right:0px;
+    width: 100%;
+	z-index: 1;
+	background-image: url("trees.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+    background-position: center; /* középre igazítás vízszintesen, felfelé igazítás függőlegesen */
+	height: 700px;
+	overflow: hidden;
+	text-align: center;
+	justify-content: center;
+	align-content: center;
+   }
+
+
+.logo-container {
+	 top: 0px;
+     position: absolute; /* Abszolút pozíciózás */
+     margin-left: 180px;
+	 z-index: 3; 
+	 transform: translateX(-50%); /* Középre igazítás kiegészítése */
+	 opacity: 0.8;
+
+}
+
+.center { 
+	text-align: center;
+	}
+
+.header2{
+	position: absolute;
+	width: 100%;
+	top: 470px;
+	height: 0px;
+	justify-content: space-between;
+	z-index: 1;
+}
+
+.cinzel-font {
+  font-family: "Cinzel", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.urbanist-font {
+  font-family: "Urbanist", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+ 
+}
+	
+
+#audioPlayer {
+    width: 100%;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+	position: absolute;
+    bottom: 0px;
+    left: 50%;
+	z-index: 3; 
+	transform: translateX(-50%); /* Középre igazítás kiegészítése */
+	height: 20px;
+	
+	/*visibility: hidden;*/
+}
+
+
+ .background {
+	top: 500px;
+	position:absolute;
+    height: 100vh; /* A képernyő teljes magasságáig nyúlik */
+    width: 100%; /* A képernyő teljes szélességét kitölti */
+    background-size: cover; /* A háttérkép teljes méretre nyúlik, hogy kitöltse a háttérképet */
+    background-position: center; /* A háttérkép középre pozícionálása */
+    background-image: url(sky.jpg);
+}
+			 
+.center{
+    text-align: center; /* Középre igazítás vízszintesen */
+}
+.menu-container {
+    display: inline-block;
+    margin-right: 200px; /* Távolság a menük között */
+    position: relative; /* Relatív pozícionálás a gyermek elemek miatt */
+    left:50px; /* Eltolás balra */
+    top:40px; /* Eltolás felfelé */
+	width: 100px;	
+	z-index: 2;
+
+}
+
+.licorice-regular {
+  font-family: "Licorice", cursive;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.menu-container:hover select {
+    display: flex; /* Megjelenítés, ha az egeret a menüre viszik */
+    
+}
+
+
+
+
+.additional-content {
+    height: 10%;
+    background-color: rgba(0,0,0,1.00);
+    box-sizing: border-box;
+    position: absolute; /* Abszolút pozíció */
+    top: 840px; /* Fentről 10 pixel távolságra */
+}
+
+.additional-content p {
+	color:rgba(176,129,10,1.00);
+    font-size: 32px; /* Tetszőleges betűméret */
+    line-height: 1.6; /* Tetszőleges sortávolság */
+    margin-bottom: 20px; /* Tetszőleges alsó margó a bekezdések között */
+	font-family: ink Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+    font-style: italic;
+	font-weight: 900;
+		
+}
+
+.additional-content-2 {
+    position: absolute; /* Abszolút pozíciózás */
+    top: 0px; /* felülre igazítás */
+    left: 0px; /* Balra igazítás */
+    width: 100%; /* Teljes szélesség */
+	height: 100px;
+    background-color: rgba(0,0,0,1.00); /* Háttérszín */
+    box-sizing: border-box; /* A padding a teljes szélességet tartalmazza */
+}
+
+
+
+select {
+	  -webkit-appearance: none;
+      -moz-appearance: none;
+	  -chrome-appearance: none;
+      appearance: none; /* Eltávolítja a böngésző alapértelmezett stílusát */
+      display: none;
+      position: absolute; /* Abszolút pozícionálás a szülőelemhez képest */
+      top: 55px; /* Az elem teteje a konténer aljától számítva */
+      left: 50%; /* Középre igazítás vízszintesen */
+      transform: translateX(-50%); /* Középre igazítás */
+      z-index: 2; /* A menü előtérbe helyezése */
+      height: inherit; /* Automatikus magasság */
+      overflow-y: hidden; /* Görgetősáv hozzáadása, ha szükséges */
+	  width: 200px;
+	  border-radius: 5px;
+	  opacity: 2;
+      font-size: 13px; /* Betűméret beállítása */
+      text-align: center;
+	  font-weight: 700;
+	  cursor: zoom-in;
+	  outline: none;
+	  max-width: 160px;
+	  border: none;
+	  transition: all 0.3s ease;
+	  background: rgba(0,0,0,0.4);
+	  padding: 10px;
+	  font-size: 18px;
+     }  
+
+select option {
+    color: white; /* Opciók alapértelmezett szövegszíne */
+	
+    
+	
+}
+	
+.oswald-font {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+select option:checked {
+    color: black; /* Kiválasztott opció szövegszíne */
+    background-color: rgba(255,221,0,1.00); /* Kiválasztott opció háttérszíne */
+	border-radius: 20px;
+}
+
+h2 {
+  /* Change the code below this line */
+     font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+     font-weight: 600;
+     font-style: italic;
+     font-size: 30px;
+  /* Change the code above this line */
+}
+
+
+
+.gallery {
+	background-color: rgba(0,0,0,0.74); /* Itt az utolsó érték az átlátszóság szintje, 0 a teljesen átlátszó, 1 a teljesen átlátszatlan */
+    display: flex;
+	position:absolute;
+	min-height: 700px;
+	min-width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+	margin-top: 390px; /* példaként a felfelé eltolást 50px-re állítottam */
+    margin-bottom: 100px; /* példaként a lefelé eltolást 50px-re állítottam */
+	z-index: 9
+}
+.gallery img {
+    width: 170px;
+    height: 170px;
+    margin: 10px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+	  
+  }
+.gallery img:hover {
+    transform: scale(1.7);
+  }
+
+
+
+#menu1 option {
+   
+	
+}
+
+#menu1 option:hover {
+    background-color: rgba(176,176,176,1.00);
+	border-radius: 10px;
+}
+
+#menu2 option {
+    background-color: rgba(68,68,68,0.70); /* Itt módosíthatod az alapértelmezett háttérszínt */
+	background: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,1)), #f8f9fa; /* Gradient + alap háttérszín */
+}
+
+#menu2 option:hover {
+    background-color: rgba(0,0,0,0.73); /* Itt módosíthatod a hátteret a hover állapotban */
+}
+
+#menu3 option {
+    background-color: rgba(68,68,68,0.70); /* Itt módosíthatod az alapértelmezett háttérszínt */
+	background: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,1)), #f8f9fa; /* Gradient + alap háttérszín */
+}
+
+#menu3 option:hover {
+    background-color: rgba(0,0,0,0.73); /* Itt módosíthatod a hátteret a hover állapotban */
+}
+
+#videoPlayer {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f0f0f0;
+    border: 6px solid rgba(217,95,22,1.00);
+    overflow: hidden; 
+}
+
+#timelapseVideo {
+    width: 100%; /* Videó szélessége a konténerrel azonos */
+    height: auto; /* Magasság automatikus, hogy megőrizze az eredeti képarányt */
+}
+
+
+
+.play-btn, .stop-btn {
+    background-color: #4CAF50; /* Zöld szín */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.stop-btn {
+    background-color: rgb9; /* Piros szín */
+}
+
+
+.navigation {
+
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="test.css" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Licorice&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+	<title>Tulderheyde</title>
+	
+</head>
+	
+<body>
+	
+	<audio id="audioPlayer" controls>
+        <source src="backgroundmusic.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+
+<div class="header"></div>
+  <div class="logo-container">  
+	 <a href="http://127.0.0.1:59167/preview/app/index.html">
+        <img src="https://static.wixstatic.com/media/2ab68c_366200874b274dbc816fe25625cc60f6~mv2.png/v1/fill/w_360,h_142,al_c,q_85,usm_0.33_1.00_0.00,enc_auto/4_edited_edited.png" alt="Logo"> 
+	 </a>
+   
+</div>
+	<div class="header2">
+		<h1 class="cinzel-font" style="font-size: 70px; text-align: center; color: white;">Living together, <span class= "urbanist-font" style= "font-size:30px; position:absolute; top: 140px; margin-left: -250px;">with the harmony of the universe.</span></h1>
+	</div>
+	<div class="center">
+    <div class="navbar"></div>
+
+    <div class="menu-container"  id="menu-container1">
+
+    <div class="gallery, licorice-regular" style="color:black; font-size: 40px; cursor: grab;">Galery</div>
+    <select id="menu1" size="4" onchange="showGallery()">
+    <option value="opcio1">Summer</option>
+    <option value="opcio2">Winter</option>
+    <option value="opcio3">Night</option>
+    <option value="opcio4">Bird view</option>
+</select>
+		
+    </div>
+
+       <div class="menu-container" id="menu-container2">
+          <div class="tranquality, licorice-regular" style="color:black; font-size: 40px; cursor: grab;">Tranquality</div>
+		   
+        <select id="menu2" size="3" onchange="showVideo();">
+       
+            <option value="opcio1">Healing Sounds</option>
+            <option value="opcio2" onclick="hideMenuContainer()">Timelapses</option>
+            <option value="opcio3">Anchient Forest</option>
+        </select>
+		   
+		   
+		   <div id="videoPlayer" style="display: none;">
+    <video controls id="timelapseVideo">
+        <source src="" type="video/mp4">
+        A böngésződ nem támogatja a videó lejátszást.
+    </video>
+			   
+</div>
+   
+    </div>
+
+    <div class="menu-container" id="menu-container3">
+          <h2 class="peace, licorice-regular" style="color:black; font-size: 40px; cursor: grab;">Peace</h2>
+        <select name="menu" id="menu3" size="3">
+            <option value="opcio1">Weather</option>
+            <option value="opcio2">Maps</option>
+            <option value="opcio3">Contacts</option>
+        </select>
+		</div>
+		
+    
+	<div class="gallery" id="gallery" style="display: none;"></div>	
+    <div class="additional-content">
+		<p>"Nature always wears the colors of the spirit."</p>
+	</div> 
+
+	<!--<div class="logo-container2">
+		<img src="footer2.PNG" alt="Logo"> 
+	</div>-->
+	
+	<div class="back_to_home" style="display:none;">
+        <a href="http://127.0.0.1:60005/preview/app/index.html" class="home-button" style="display:none;">Back to Home</a>
+		</div>	
+		<div class="background"></div>
+		
+		
+	<!--<div class="gallery" id="gallery1" style="display: none;">
+		</div>	-->
+   <script src="test.js"></script>
+	
+    
+			
+</div>
+</body>	
+</html>
+	
+	
+	
